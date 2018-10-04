@@ -17,6 +17,6 @@ Players needs to set any of the card among the deck.
 Points are scored if plotted cards are as below:
 
 Citizen vs Citizen -> Draw and those cards will be removed from their deck and the game continues with the remaining cards.
-King vs Citizen -> King Wins
-Slave vs Citizen -> Citizen Wins
+King vs Citizen -> King Wins.
+Slave vs Citizen -> Citizen Wins.
 King vs Slave -> Slave Wins, as slave has the highest chances of attacking the king like anyother.
