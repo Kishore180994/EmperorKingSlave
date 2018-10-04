@@ -1,0 +1,63 @@
+﻿<Window x:Class="Game.KingSlave"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Game"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="King And Slave" Height="400" Width="600" Icon="bin/Debug/Images/emperor.png">
+    <Grid x:Name="myGrid">
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Name="King" PreviewMouseDown = "OnMouseDown" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Source="{StaticResource king}" Height="107" Width="72"></Image>
+        <Image Name="Slave" PreviewMouseDown = "OnMouseDown" Grid.Column="0" Grid.Row="0" Source="{StaticResource slave}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="c1" PreviewMouseDown = "OnMouseDown" Grid.Column="0" Grid.Row="0" Source="{StaticResource c1}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="c2" PreviewMouseDown = "OnMouseDown" Grid.Column="0" Grid.Row="0" Source="{StaticResource c2}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="c3" PreviewMouseDown = "OnMouseDown" Grid.Column="0" Grid.Row="0" Source="{StaticResource c3}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="c4" PreviewMouseDown = "OnMouseDown" Grid.Column="0" Grid.Row="0" Source="{StaticResource c4}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="c5" PreviewMouseDown = "OnMouseDown" Grid.Column="0" Grid.Row="0" Source="{StaticResource c5}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="c6" PreviewMouseDown = "OnMouseDown" Grid.Column="0" Grid.Row="0" Source="{StaticResource c6}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="c7" PreviewMouseDown = "OnMouseDown" Grid.Column="0" Grid.Row="0" Source="{StaticResource c7}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="c8" PreviewMouseDown = "OnMouseDown" Grid.Column="0" Grid.Row="0" Source="{StaticResource c8}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="lcs" Grid.Column="0" Grid.Row="0" Source="{StaticResource lcs}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="lcs1" Grid.Column="0" Grid.Row="0" Source="{StaticResource lcs1}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="lcs2" Grid.Column="0" Grid.Row="0" Source="{StaticResource lcs2}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="lcs3" Grid.Column="0" Grid.Row="0" Source="{StaticResource lcs3}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="lcs4" Grid.Column="0" Grid.Row="0" Source="{StaticResource lcs4}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="lcs5" Grid.Column="0" Grid.Row="0" Source="{StaticResource lcs5}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="lcs6" Grid.Column="0" Grid.Row="0" Source="{StaticResource lcs6}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="lcs7" Grid.Column="0" Grid.Row="0" Source="{StaticResource lcs7}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="lcs8" Grid.Column="0" Grid.Row="0" Source="{StaticResource lcs8}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+        <Image Name="lcs9" Grid.Column="0" Grid.Row="0" Source="{StaticResource lcs9}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="107" Width="72"></Image>
+
+        <Button x:Name="start" Height="30" Content="START" Grid.Column="0" Grid.Row="1" Style="{StaticResource ImageHoverButtons}" Click="start_Click" ></Button>
+        <Button x:Name="flip" Height="30" Content="FLIP" Grid.Column="0" Grid.Row="2" Style="{StaticResource ImageHoverButtons}" Click="flip_Click"  Margin="0,10,0,83"></Button>
+        <Button x:Name="set" Height="30" Content="SET" Grid.Column="0" Grid.Row="2" Style="{StaticResource ImageHoverButtons}" Click="set_Click"></Button>
+        <Button x:Name="GO" Height="30" Content="GO!!!" Grid.Column="3" Grid.Row="1" Style="{StaticResource ImageHoverButtons}" Click="GO_Click"></Button>
+        <Label x:Name="Player" Background="Transparent" Content="Player: " Grid.Column="5" HorizontalAlignment="Left" Margin="10,21,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Berlin Sans FB" Foreground="#FFFB0404"/>
+        <Label x:Name="AI" Content="AI :" Grid.Column="5" HorizontalAlignment="Left" Margin="10,61,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Berlin Sans FB" Background="Transparent" Foreground="#FFFB0404" Width="48"/>
+        <Label x:Name="playerScore" Content="0" Grid.Column="5" HorizontalAlignment="Left" Margin="63,21,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.375,0.577" Width="26" Foreground="#FF0118FF"/>
+        <Label x:Name="aipoints" Content="0" Grid.Column="5" HorizontalAlignment="Left" Margin="63,59,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.375,0.577" Width="26" Foreground="#FF0118FF"/>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="bin/Debug/Images/wood.jpg" Opacity="0.3"/>
+        </Grid.Background>
+    </Grid>
+
+
+
+</Window>

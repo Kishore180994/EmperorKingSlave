@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Game.exe" version="1.0.0.0" publicKeyToken="52e1450cd846b0c1" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Game" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Game.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ControlzEx.dll" size="180224">
+      <assemblyIdentity name="ControlzEx" version="3.0.2.4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Vcrgr4UXrC14eyEKxvecmqx/WANbafqvYgqQ8z4mdvw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Game.exe" size="1216496">
+      <assemblyIdentity name="Game" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>T9EfwGvMEareFKa/4RzEmbk83wDhlvYN9u/BLYsEtkc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MahApps.Metro.dll" size="1097216">
+      <assemblyIdentity name="MahApps.Metro" version="1.6.5.1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>CWWXjcLsWdBx8guO44Bvmp4kwMRFg6QWueZpQBSXEi4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Windows.Interactivity.dll" size="55904">
+      <assemblyIdentity name="System.Windows.Interactivity" version="4.5.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>k/vFnkiAr8nxNsOsCXatp/P6p8rO3OXIJLM3y8qdLr8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Game.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-K0TKU7P\Kishore" issuerKeyHash="c9ec379ff872234adaf3690483a5255558e57b7c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>SVZmlpgi7fh29dEjBvB5n/WAGbwb7DpUUq/a76IN5SA=</DigestValue></Reference></SignedInfo><SignatureValue>FSJNCiceMTzoDRrgkcrISpWuhH+oSeK2ggoqaSNicSAxi7jkUvl+HgS/UFvUMxYNTuBjVGVI3tXstp+hM+mHy4OADT6hpz+YYcYslCiz/xOXT5iPxIofxx8vSl/iN1hGWKwhFEa03NAztawAa/rYEu3W25SWn/T654CxLOL6L0I=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xEPrk+pT/ldD1mYZQM/3Psat3IfGbJ+PAGr+jYUdCPbcb/z6ogIWUwrXBb++4vCtj7ulx6ZdilVaWsdV7IsE/K7GtzTN0YoLolm1vb9kejTFhvDkFXQXCf1ttlemvxXEU8VCe0z4DbTa/s7GMs13HSnkIjyP8UG503QEO+soXr0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="20e50da2efdaaf52543aec1bbc1980f59f79f00623d1f576f8ed229896665649" Description="" Url=""><as:assemblyIdentity name="Game.exe" version="1.0.0.0" publicKeyToken="52e1450cd846b0c1" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-K0TKU7P\Kishore</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>NnzmJdacDkoJ3qyPWEOwhR60ViXa1yVBxE9+4hGpG/o=</DigestValue></Reference></SignedInfo><SignatureValue>E+lUyh4UspeuVpNhi6xqjbCORDgNVCv7Z9TGeaRF3eC8ESMeA335PjUXfcsZVbYWppITYji3P7pNLG9kWPAxs7FW3C8CU9GYma/Bf8PEthOziFxgptoAPerKC0hr7sjUmtUtD1CMDTC0BNcMGYCLGi9rJiRizGiKDuWvhIuadnI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xEPrk+pT/ldD1mYZQM/3Psat3IfGbJ+PAGr+jYUdCPbcb/z6ogIWUwrXBb++4vCtj7ulx6ZdilVaWsdV7IsE/K7GtzTN0YoLolm1vb9kejTFhvDkFXQXCf1ttlemvxXEU8VCe0z4DbTa/s7GMs13HSnkIjyP8UG503QEO+soXr0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQZQNtMrBq6IlL/LBlkSj5NjANBgkqhkiG9w0BAQsFADA5MTcwNQYDVQQDHi4ARABFAFMASwBUAE8AUAAtAEsAMABUAEsAVQA3AFAAXABLAGkAcwBoAG8AcgBlMB4XDTE4MDkyNzA5MDkwOFoXDTE5MDkyNzE1MDkwOFowOTE3MDUGA1UEAx4uAEQARQBTAEsAVABPAFAALQBLADAAVABLAFUANwBQAFwASwBpAHMAaABvAHIAZTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAxEPrk+pT/ldD1mYZQM/3Psat3IfGbJ+PAGr+jYUdCPbcb/z6ogIWUwrXBb++4vCtj7ulx6ZdilVaWsdV7IsE/K7GtzTN0YoLolm1vb9kejTFhvDkFXQXCf1ttlemvxXEU8VCe0z4DbTa/s7GMs13HSnkIjyP8UG503QEO+soXr0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQAqqI1c58YAKoEawYnZCqv2bX586dP5/TLgCCAhSbxboxATeTngcKW3xQp0iXqDwP0Hhshr2/O38MzHKzoeYlsFSE1AQ96ln36QmnbDpIF9m1h/g7EVBKcae78kawEoDRMQlVQev5P+HCbNXZV3ztYLfsBMjaMBcF547LuJZ+PL+A==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
